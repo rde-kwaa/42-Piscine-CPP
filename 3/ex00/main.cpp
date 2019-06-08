@@ -6,7 +6,7 @@
 /*   By: rde-kwaa <rde-kwaa@student.wethinkcode.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/07 14:07:38 by rde-kwaa          #+#    #+#             */
-/*   Updated: 2019/06/08 12:26:21 by rde-kwaa         ###   ########.fr       */
+/*   Updated: 2019/06/08 12:41:34 by rde-kwaa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ int main(void) {
     FragTrap subject_one;
     FragTrap subject_two("Claptrap");
     FragTrap subject_alsotwo;
-    size_t number_of_vaulthunter = 5;
 
     subject_one.rangedAttack("Lilith");
     subject_two.meleeAttack("Lilith");
@@ -26,7 +25,9 @@ int main(void) {
     subject_two.magneticMeditation();
     subject_alsotwo.defragment();
 
-    while (number_of_vaulthunter--)
-        subject_alsotwo.vaulthunter_dot_exe("Lilith");
+    subject_alsotwo.vaulthunter_dot_exe("Roland");
+    subject_alsotwo.vaulthunter_dot_exe("Handsome Jack");
+    subject_alsotwo.vaulthunter_dot_exe("Zero");
+
     return (0);
 }
