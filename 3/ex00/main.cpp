@@ -6,7 +6,7 @@
 /*   By: rde-kwaa <rde-kwaa@student.wethinkcode.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/07 14:07:38 by rde-kwaa          #+#    #+#             */
-/*   Updated: 2019/06/08 12:41:34 by rde-kwaa         ###   ########.fr       */
+/*   Updated: 2019/06/08 13:02:03 by rde-kwaa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,23 @@
 #include "FragTrap.hpp"
 
 int main(void) {
-    FragTrap subject_one;
-    FragTrap subject_two("Claptrap");
-    FragTrap subject_alsotwo;
+    FragTrap bot_1;
+    FragTrap bot_2("Flaptrap");
+    FragTrap bot_copy_2;
+    FragTrap bot_3("Claptrap");
 
-    subject_one.rangedAttack("Lilith");
-    subject_two.meleeAttack("Lilith");
-    subject_alsotwo.takeDamage(70);
-    subject_alsotwo.takeDamage(60);
-    subject_two.magneticMeditation();
-    subject_alsotwo.defragment();
+    bot_1.rangedAttack("Lilith");
+    bot_2.meleeAttack("Zero");
+    bot_copy_2.takeDamage(70);
+    bot_copy_2.takeDamage(60);
+    bot_2.magneticMeditation();
+    bot_2.defragment();
 
-    subject_alsotwo.vaulthunter_dot_exe("Roland");
-    subject_alsotwo.vaulthunter_dot_exe("Handsome Jack");
-    subject_alsotwo.vaulthunter_dot_exe("Zero");
+    bot_3.vaulthunter_dot_exe("Roland");
+    bot_3.vaulthunter_dot_exe("Handsome Jack");
+    bot_3.vaulthunter_dot_exe("Zero");
+    bot_3.vaulthunter_dot_exe("Handsome Jack again");
+    bot_3.vaulthunter_dot_exe("Lilith");
 
     return (0);
 }
